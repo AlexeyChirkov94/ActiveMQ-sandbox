@@ -1,4 +1,4 @@
-package ru.chirkov.active.mq.consumer.model;
+package ru.chirkov.active.mq.producer.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,9 +7,10 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class ActiveMQMessage {
+public class ActiveMQMessageContainer {
 
     Long id;
-    String value;
+    Class<?> clazz;
+    String jsonValue;
 
 }

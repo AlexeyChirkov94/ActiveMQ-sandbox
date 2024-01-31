@@ -13,4 +13,12 @@
     <name>consumer</name>
     <description>consumer</description>
 
+    <dependencies>
+        <dependency>
+            <groupId>ru.chirkov.active.mq</groupId>
+            <artifactId>producer</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
+
 </project>

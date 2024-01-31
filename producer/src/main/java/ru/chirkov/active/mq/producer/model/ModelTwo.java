@@ -7,9 +7,12 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class ActiveMQMessage {
+public class ModelTwo {
 
     Long id;
-    String value;
+    String model;
+    String brand;
+    Integer power;
+    Integer speedLimit;
 
 }

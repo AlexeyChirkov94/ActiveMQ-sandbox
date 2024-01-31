@@ -15,7 +15,6 @@
         <module>consumer</module>
     </modules>
 
-
     <groupId>ru.chirkov</groupId>
     <artifactId>active.mq</artifactId>
     <version>0.0.1-SNAPSHOT</version>
@@ -25,8 +24,20 @@
         <java.version>17</java.version>
     </properties>
 
-    <dependencies>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>ru.chirkov.active.mq</groupId>
+                <artifactId>producer</artifactId>
+            </dependency>
+            <dependency>
+                <groupId>ru.chirkov.active.mq</groupId>
+                <artifactId>consumer</artifactId>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
+    <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -54,7 +65,6 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-
     </dependencies>
 
     <build>
